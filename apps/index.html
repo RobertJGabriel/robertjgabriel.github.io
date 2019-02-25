@@ -197,15 +197,13 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
               <tr>
                 <th>Name</th>
                 <th>Description</th>
-                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="repo in repos">
-                <td>
-                   {{repo.name}}</td>
+                <td> <a v-bind:href="repo.html_url" target="blank">
+                     {{repo.name}}</a></td>
                 <td>{{repo.description}}</td>
-                <td><a v-bind:href="repo.html_url" target="blank"> View</a></td>
               </tr>
             </tbody>
           </table>
