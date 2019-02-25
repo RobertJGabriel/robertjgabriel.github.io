@@ -1,7 +1,7 @@
 'use strict';
 
 const PREFIX = 'robertgabriel.ninja';
-const HASH = 'cf3e03f1';
+const HASH = '55ee34e5';
 const OFFLINE_CACHE = PREFIX + '-' + HASH;
 
 self.addEventListener('install', function(event) {

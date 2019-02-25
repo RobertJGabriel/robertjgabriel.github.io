@@ -53,7 +53,7 @@
     </style>
     <script src="https://unpkg.com/vue@2.5.16/dist/vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/vue.resource/1.0.3/vue-resource.min.js"></script>
-    <script src="./assets/js/vue/repos.js" defer></script>
+    <script src="/assets/js/vue/repos.js" defer></script>
   </head>
   <body>
     <div class="navbar navbar-warning" id="navBar">
@@ -80,36 +80,43 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       </div>
       <div class="overlay" v-bind:class="{ show: isOpen }"></div>
     </div>
-    <div class="container-fluid base-header">
+    <div class="container-fluid base-header" id="repos">
       <div class="row">
         <div class="col-sm-3 col-md-3 col-lg-3"></div>
         <div class="col-sm-6 col-md-6 col-lg-6 wrapper">
-          <div class="row"><img class="me img-responsive" src="/assets/img/me/me-5.webp" alt="Robert James Gabriel" width="150" height="150">
+          <div class="row">
             <h1 class="text-center"><b>Apps</b></h1>
             <h2 class="text-center">Created by myself with coffee and beer.</h2>
           </div>
         </div>
         <div class="col-sm-3 col-md-3 col-lg-3"></div>
-        <div class="col-sm-12 col-md-12 col-lg-12 wrapper">
+      </div>
+      <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2"></div>
+        <div class="col-sm-8 col-md-8 col-lg-8 wrapper">
           <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-              <div class="boxes"><img class="img-responsive" src="/assets/img/screenshots/sync.webp" alt=" Seo app screenshot">
-                <h2>Sync Snip</h2>
-                <p>Sync snippets of text, URLs or anything else across different operating systems instantly.</p><a class="btn btn-flat color-white" href="https://chrome.google.com/webstore/detail/sync-snip/lfdilgpdlbbffekebkinihgdjknbnbnc" target="blank"> Try it now</a>
-              </div>
+            <div class="boxes"><img class="img-responsive" src="/assets/img/screenshots/sync.webp" alt=" Seo app screenshot">
+              <h2>Sync Snip</h2>
+              <p>Sync snippets of text, URLs or anything else across different operating systems instantly.</p><a class="btn btn-flat color-white" href="https://chrome.google.com/webstore/detail/sync-snip/lfdilgpdlbbffekebkinihgdjknbnbnc" target="blank"> Try it now</a>
             </div>
+          </div>
+          <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="boxes"><img class="img-responsive" src="/assets/img/screenshots/seo.webp" alt=" Seo app screenshot">
                 <h2>Can I use ___ for Chrome</h2>
                 <p>Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers? So you can run this on any page and get a response of all the features that are used on the page and not supported.</p><a class="btn btn-flat color-white" href="https://www.robertgabriel.ninja//apps/can-i-use" target="blank"> Try it now</a>
               </div>
             </div>
+          </div>
+          <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="boxes"><img class="img-responsive" src="/assets/img/screenshots/helperbird.webp" alt=" Seo app screenshot">
                 <h2>Mobile Dyslexic Tool - Helperbird for Chrome</h2>
                 <p>Helperbird is an extension that overrides all fonts on the webpage with the award-winning OpenDyslexic font and changes the page to be more easily read. You can switch it on and off at any time. Helping people with dyslexia. You can now change the size of the font!.</p><a class="btn btn-flat color-white" href="https://chrome.google.com/webstore/detail/opendyslexic-font-helperb/ahmapmilbkfamljbpgphfndeemhnajme" target="blank"> Try it Now</a>
               </div>
             </div>
+          </div>
+          <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="boxes"><img class="img-responsive" src="/assets/img/screenshots/editor.webp" alt="Markdown editor screenshot">
                 <h2>Markdown Editor for Firefox</h2>
@@ -119,6 +126,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                 </p><a class="btn btn-flat color-white" href="https://addons.mozilla.org/en-US/firefox/addon/markdown-editor-premium/" target="blank"> Try it now!</a>
               </div>
             </div>
+          </div>
+          <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="boxes"><img class="img-responsive" src="/assets/img/screenshots/opendyslexic.webp" alt="opendyslexic for firefox/chrome screenshot">
                 <h2>OpenDyslexic for Chrome</h2>
@@ -128,6 +137,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                 </p><a class="btn btn-flat color-white" href="https://chrome.google.com/webstore/detail/opendyslexic-font-for-chr/cdnapgfjopgaggbmfgbiinmmbdcglnam" target="blank">Try it now!</a>
               </div>
             </div>
+          </div>
+          <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="boxes"><img class="img-responsive" src="/assets/img/screenshots/firefox.webp" alt="Netflix for firefox/chrome screenshot">
                 <h2>Netflix Hidden Categories for Chrome</h2>
@@ -137,6 +148,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                 </p><a class="btn btn-flat color-white" href="https://chrome.google.com/webstore/detail/netflix-hidden-categories/pajmfnmlmcknmehpcklomlblpdcpdmgg" target="blank">Try it now!</a>
               </div>
             </div>
+          </div>
+          <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="boxes"><img class="img-responsive" src="/assets/img/screenshots/editor.webp" alt="Markdown editor screenshot">
                 <h2>Markdown Editor for Chrome</h2>
@@ -148,7 +161,21 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-12 wrapper">
+        <div class="col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3"></div>
+        <div class="col-sm-6 col-md-6 col-lg-6 wrapper">
+          <div class="row">
+            <h1 class="text-center"><b>Latest Projects</b></h1>
+            <h2 class="text-center">On <a href="https://github.com/robertjgabriel"> Github</a></h2>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2"></div>
+        <div class="col-sm-8 col-md-8 col-lg-8 wrapper">
           <div class="c" v-bind:class="{ hide: loading == false}">
             <div class="sk-fading-circle">
               <div class="sk-circle1 sk-circle"></div>
@@ -168,20 +195,16 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
           <table class="table table-striped table-hover" v-bind:class="{ hide: loading == true}" v-cloak>
             <thead>
               <tr>
-                <th>#</th>
-                <th>Column heading</th>
-                <th>Column heading</th>
-                <th>Column heading</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="repo in repos">
-                <td>1</td>
                 <td>
                    {{repo.name}}</td>
                 <td>{{repo.description}}</td>
-                <td>{{repo.language}}</td>
-                <td>{{repo.stargazers_count}}</td>
                 <td><a v-bind:href="repo.html_url" target="blank"> View</a></td>
               </tr>
             </tbody>
@@ -246,7 +269,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <script src="/assets/js/app.min.js" defer></script>
   <script>
             if ('serviceWorker' in navigator) {
-              navigator.serviceWorker.register('/cf3e03f1.js');
+              navigator.serviceWorker.register('/55ee34e5.js');
             }
           </script></body>
 </html>
