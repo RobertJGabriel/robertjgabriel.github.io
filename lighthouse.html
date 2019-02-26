@@ -6541,9 +6541,9 @@
       const metricAuditsEl = this.renderAuditGroup(groups['metrics'], {expandable: false});
       const keyMetrics = metricAudits.filter(a => a.weight >= 3);
       const otherMetrics = metricAudits.filter(a => a.weight < 3);
-      const metricsboxes.pullUpEl = this.dom.createChildOf(metricAuditsEl, 'div', 'lh-metric-container');
-      const metricsColumn1El = this.dom.createChildOf(metricsboxes.pullUpEl, 'div', 'lh-metric-column');
-      const metricsColumn2El = this.dom.createChildOf(metricsboxes.pullUpEl, 'div', 'lh-metric-column');
+      const metricsboxesEl = this.dom.createChildOf(metricAuditsEl, 'div', 'lh-metric-container');
+      const metricsColumn1El = this.dom.createChildOf(metricsboxesEl, 'div', 'lh-metric-column');
+      const metricsColumn2El = this.dom.createChildOf(metricsboxesEl, 'div', 'lh-metric-column');
       keyMetrics.forEach(item => {
       metricsColumn1El.appendChild(this._renderMetric(item));
       });
@@ -6884,7 +6884,7 @@
     </script>
   <script>
             if ('serviceWorker' in navigator) {
-              navigator.serviceWorker.register('/27ca0828.js');
+              navigator.serviceWorker.register('/3a23ba6e.js');
             }
           </script></body>
 </html>
